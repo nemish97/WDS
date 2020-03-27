@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Web and Digital Solutions</title>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, scale=1">
+  <meta name="description" content="Best Coaching Class for NATA, NID, NIFT and BFA in Mumbai with branches in Ghatkopar and Andheri." />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="images\logo.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+    
+  <body >
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar" id="myNavbar2" style="background:transparent;">
+            <span class="icon-bar" style="background-color: white;"></span>
+            <span class="icon-bar" style="background-color: white;"></span>                      
+            <span class="icon-bar" style="background-color: white;"></span>                      
+          </button>
+          <a class="navbar-brand" href="#myPage"><img src="images/newlogo.jpg" style="width:135px;height:30px ; position: absolute; top: 10px; bottom: 10px;"></a>
+        </div>
+        <nav class="collapse navbar-collapse back" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right " >
+            <li><a  href="#myPage" onclick="w3_close()"> HOME</a></li>
+            <li><a href="#about" onclick="w3_close()"> ABOUT US</a></li>
+            <li><a href="#services" onclick="w3_close()"> SERVICES</a></li>
+            <li><a href="#contact" onclick="w3_close()">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+
+
+    <img class="scroll" id="myPage" src="image.jpg" alt="Chania" style="width: 100%; height: 100%; ">
+
+    <div id="about" style="padding-top: 2%;"></div>
+    <div class="title">
+       ABOUT US
+    </div>
+    <div class="container block">
+      <p>WDS is a one stop solution for all your digital needs. From listing you out on google search to handling your social media, from design your website to website development, from graphic designing to writing blogs we cover all your need under one roof. With a hard working team and bunch of experienced craftsman, we deliver what is best for your business. <br>We expertise in website development, website management, website optimization, Smart engine optimization (SEO), Ecommerce website, Social media handling, Graphic design. We blend the latest technologies with our experience in the market to bring out a product that is perfect for your need and sky rocket your business.<br>We have our success mantra as “If you can imagine it, we can build it”. We believe that your power to imagine a successful business drives us to build that imagination into reality.
+      </p>
+    </div>
+
+
+   
+    <div class="container" >
+        <div class="title">
+           We Specialize In
+        </div>
+        <div class="col-sm-4 tile " >
+          <img src="test.jpg" alt="Shreyansh"style="width: 50%; height: 50%; margin: auto; display: block;">
+          <div class="container">
+            <h2 style="font-family: oswald; font-size:23px; text-align: center; color: black;">Business Stratergy</h2>
+            <p style="text-align: justify;font-family: lato; ">We come up with numerous ideas and strategies so that we can make your business grow like never before</p>
+          </div>
+        </div>
+        <div class="col-sm-4 tile" >
+         <img src="test.jpg" alt="Shreyansh"style="width: 50%; height: 50%; margin: auto; display: block;">
+          <div class="container">
+            <h2 style="font-family: oswald; font-size:23px; text-align: center; color: black;">Technology</h2>
+            <p style="text-align: justify;font-family: lato; ">We are not far away from the latest technologies in the market so that your business is ready to boost up the speed for success.</p>
+          </div>
+        </div>
+        <div class="col-sm-4 tile" >
+          <img src="test.jpg" alt="Shreyansh"style="width: 50%; height: 50%; margin: auto; display: block;">
+          <div class="container">
+            <h2 style="font-family: oswald; font-size:23px; text-align: center; color: black;">Designing User Experience</h2>
+            <p style="text-align: justify;font-family: lato; ">We have expertise in creating best in class user experience for your target audience.</p>
+          </div>
+        </div>
+    </div>
+   
+    
+     
+    
+    <div class="container">
+      <center >
+       <a href="" ><button class="button">click me to know more about us </button></a>   
+      </center>
+    </div>
+    
+
+
+
+
+  <script>
+    $(document).ready(function(){
+      $("#myNavbar2").click(function(){
+          $("#myNavbar").slideToggle("ease");
+
+      });
+    });
+
+  </script>
+  <script type="text/javascript">
+      function w3_close() {
+          $("#myNavbar").slideToggle("ease")
+      }
+      function w3_open() {
+          $("#myNavbar2").slideToggle("ease")
+      }
+    
+  </script>
+    <script>
+         $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);
+      });
+    </script>
+
+ <script>
+    $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+    
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 1250, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+    })
+
+  </script>
+
+  
+
+
+
+<!-- <script>
+ $(document).ready(function() {
+ 
+    $('.faq_question').click(function() {
+ 
+        if ($(this).parent().is('.open')){
+            $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
+            $(this).closest('.faq').removeClass('open');
+ 
+            }else{
+                var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
+                $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
+                $(this).closest('.faq').addClass('open');
+            }
+ 
+    });
+ 
+});
+</script> -->
+<!-- <style>
+/*FAQS*/
+.faq_question {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+ 
+.faq_answer_container {
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+</style> -->
+
+<!-- <div class="faq_container">
+   <div class="faq">
+      <div class="faq_question">Question goes here</div>
+           <div class="faq_answer_container">
+              <div class="faq_answer">Answer goes here</div>
+           </div>        
+    </div>
+
+<div class="faq_container">
+   <div class="faq">
+      <div class="faq_question">Question goes here</div>
+           <div class="faq_answer_container">
+              <div class="faq_answer">Answer goes here</div>
+           </div>        
+    </div>
+    <div class="faq_container">
+   <div class="faq">
+      <div class="faq_question">Question goes here</div>
+           <div class="faq_answer_container">
+              <div class="faq_answer">Answer goes here</div>
+           </div>        
+    </div>
+     -->
+  </body>
+</html>
