@@ -2,13 +2,14 @@
 
 body {
   line-height: 1.7;
-  letter-spacing: 1px; 
-  /*color: #4d4d4d;*/
+  letter-spacing: 1.2px; 
+  color: grey;
   font-weight: 400;
   font-size: 16px; 
+  font-family: Montserrat;
 
   background: white;
-  font-family: sans-serif;
+  
 }
 
 a {
@@ -122,3 +123,15 @@ h1, h2, h3, h4, h5,
   -o-transition: .3s all ease;
   transition: .3s all ease;
   } 
+
+  .panel-heading
+  {
+    color: white;
+    background: -webkit-linear-gradient(left,  #0d4d61 ,#06232b );
+
+  }
+
+  .panel-title a
+  {
+    color: white;
+  }
