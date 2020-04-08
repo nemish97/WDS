@@ -28,14 +28,7 @@ a {
 	text-align: justify;
 }
 
-.title
-{
-	margin-top: 2%;
-	margin-bottom: 2%;
-	text-align: center;
-	font-weight:  bold;
-	font-size: 22px;
-}
+
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -66,6 +59,11 @@ h1, h2, h3, h4, h5,
       color: #fff !important;
   }
 
+.active
+{
+  font-size: 20px;
+}
+
 @media (min-width: 600px){
 .navbar-default li a:hover {
      transform: scale(1.2);
@@ -73,6 +71,7 @@ h1, h2, h3, h4, h5,
   -o-transition: .2s all ease;
   transition: .2s all ease;
   }
+
 }
  @media (max-width: 600px){
   .back.scrolled
@@ -116,13 +115,14 @@ h1, h2, h3, h4, h5,
 
   }
 
-  .tile:hover
+
+  /*.tile:hover
   {
   	transform: scale(1.1);
       -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  } 
+  } */
 
   .panel-heading
   {
@@ -135,3 +135,37 @@ h1, h2, h3, h4, h5,
   {
     color: white;
   }
+
+  .panel
+  {
+    width: 85%;
+    margin: auto;
+  }
+@media (max-width: 600px){
+ .panel
+  {
+    width: 100%;
+    margin: auto;
+  }
+}
+  .heading
+  {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0d4d61;
+    display: block;padding-bottom: 2%;
+  }
+.title
+{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 20px;
+
+}
+  .home-images
+  {
+    width: 50%; height: 50%; margin: auto; display: block;
+  }
+
