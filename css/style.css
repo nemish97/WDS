@@ -35,6 +35,11 @@ a {
 }
 
 
+.footer
+{
+   background: -webkit-linear-gradient(left,  #0d4d61 ,#06232b );
+   color: white;
+}
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -96,6 +101,8 @@ h1, h2, h3, h4, h5,
 {
   margin-bottom:4%; 
 }
+
+
 
 .button
 {
@@ -195,4 +202,6 @@ h1, h2, h3, h4, h5,
   background: -webkit-linear-gradient(left,  #0d4d61 ,#06232b );
   border-radius: 25px;
 }
+
 }
+

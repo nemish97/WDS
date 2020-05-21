@@ -129,3 +129,13 @@
                   form.addEventListener("submit", handleFormSubmit, false);
                 };
                document.addEventListener('DOMContentLoaded', loaded, false);
+
+
+
+ function getstarted() {
+  document.getElementById('regForm').style.display = 'block';
+}
+
+function close() {
+  document.getElementById('regForm').style.display = 'none';
+}
