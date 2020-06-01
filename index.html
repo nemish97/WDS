@@ -32,7 +32,7 @@
   <body  >
 
 
-    <div id="myModal" class="modal fade">
+  <!--   <div id="myModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <script>
 
   $(document).ready(function(){
@@ -114,45 +114,85 @@
             showCursor: true
             });
   </script>
+  
 
 
     <div class="modal fade" id="myModal1" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
+      <div class="modal-dialog " >
+        <div class="modal-content" style="background: url(images/background.jpg); color: white;">
+          <!-- <div class="modal-header" style="background: -webkit-linear-gradient(left,  #0d4d61 ,#06232b );">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body">
+            <h4 class="modal-title" >Lets Get Started</h4>
+          </div> -->
+          <div class="modal-body  ">
             
-<form id="regForm" action="/action_page.php">
-  <h1>Register:</h1>
+<form id="regForm" action="/action_page.php" style="background: transparent; ">
+ 
   <!-- One "tab" for each step in the form: -->
-  <div class="tab">Name:
-    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+  
+  <div class="tab">
+    <p style="text-align: center; font-size: 20px; color: white; font-weight: bold;">Is Your Business Online Yet?</p>
+    <select class="form-control" style="margin-bottom: 20px;">
+      <option value="Yes">Yes</option>
+      <option value="AL">No</option>
+    </select>
+    <!-- <input style="margin-bottom: 20px;" class="form-control"  name="NAME" placeholder="Name" type="text"  pattern="[a-z]*[A-Z]*" title="Numbers or Special Characters are not allowed" required>
+    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p> -->
   </div>
-  <div class="tab">Contact Info:
-    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+  <div class="tab">
+    <h3>Which Services Are You Looking For?</h3>
+        <input type="checkbox" value="Website development">&nbsp;Website development<br>
+      
+      
+        <input type="checkbox" value="Website design">&nbsp;Website design<br>
+     
+      
+        <input type="checkbox" value="Website maintenance">&nbsp;Website maintenance<br>
+      
+        <input type="checkbox" value="Website optimization">&nbsp;Website optimization<br>
+        <input type="checkbox" value="SEO">&nbsp;SEO<br>
+      
+        <input type="checkbox" value="Ecommerce website">&nbsp;Ecommerce website<br>
+      
+        <input type="checkbox" value="Web hosting">&nbsp;Web hosting<br>
+      
+        <input type="checkbox" value="PPC">&nbsp;PPC<br>
+      
+        <input type="checkbox" value="Google business listing">&nbsp;Google business listing<br>
+      
+        <input type="checkbox" value="Social media management">&nbsp;Social media management<br>
+      
+        <input type="checkbox" value="Blog">&nbsp;Blog<br>
+      
+        <input type="checkbox" value="Graphic design">&nbsp;Graphic design<br><br>
+   
+   </div>
+  <div class="tab">
+    <h3 >Tell Us A Little More About Your Business</h3>
+    <input style="margin-bottom: 20px;" class="form-control"  name="BusinessName" placeholder="Name of the Business" type="text" >
+    <input style="margin-bottom: 20px; " class="form-control"  name="BusinessDescription" placeholder="Short Description" type="text"  >
+    <input style="margin-bottom: 20px;" class="form-control"  name="URL" placeholder="URL to existing Site (Type No if not applicable)" type="text"  >
   </div>
-  <div class="tab">Birthday:
-    <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+  <div class="tab">
+    <h3>Want Us to Know Anything Else?</h3>
+    <textarea style="margin-bottom: 20px;" class="form-control"  name="Type Here If Applicable" placeholder="Name of the Business" type="text" ></textarea>
+    
   </div>
-  <div class="tab">Login Info:
-    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+  <div class="tab">
+    <h3>Contact Details</h3>
+    <input style="margin-bottom: 20px;" class="form-control"  name="Name" placeholder="Your Name" type="text" >
+    <input style="margin-bottom: 20px;" class="form-control"  name="Email" placeholder="Your Email ID" type="text" >
+    <input style="margin-bottom: 20px;" class="form-control"  name="Contact" placeholder="Your Contact Number" type="text"  >
   </div>
   <div style="overflow:auto;">
     <div style="float:right;">
-      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+      <button type="button" class="button1" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" class="button1" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->
   <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
     <span class="step"></span>
@@ -174,6 +214,7 @@ showTab(currentTab); // Display the current tab
 function showTab(n) {
   // This function will display the specified tab of the form...
   var x = document.getElementsByClassName("tab");
+  x[n].style.transition = "all 2s";
   x[n].style.display = "block";
   //... and fix the Previous/Next buttons:
   if (n == 0) {
@@ -255,7 +296,30 @@ function fixStepIndicator(n) {
       </p>
     </div>
 
+<!-- <script type="text/javascript">
+  function hoverindicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("hovertest");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace("focused", "nonfocused");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += "focused";
+}
 
+function nonhover(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("hovertest");
+  for (i = 0; i < x.length; i++) {
+    if(n!=(i+1)){
+      x[i].className = x[i].className.replace("nonfocused", "focused");
+    }
+    
+  }
+  //... and adds the "active" class on the current step:
+ /* x[n].className += "focused";*/
+}
+</script> -->
    
   
 
@@ -267,7 +331,7 @@ function fixStepIndicator(n) {
         <div class="underline center-block" data-aos="zoom-in"></div>
 
         <div class="col-sm-4 tile " data-aos="zoom-in">
-          <div id= "1" class="focused " onmouseover="hoveringfocus(this)" onmouseout="nonhover(this)">
+          <div id= "1" class="focused hovertest " onmouseover="hoverindicator(1)" onmouseout="nonhover(1)">
           <img src="images/web development.png" alt="Shreyansh"class="home-images">
           <div class="container">
             <h2  class="heading">Website development</h2>
@@ -280,7 +344,7 @@ function fixStepIndicator(n) {
 
 
         <div class="col-sm-4 tile "data-aos="zoom-in" >
-          <div id= "2" class="focused ">
+          <div id= "2" class="focused hovertest "onmouseover="hoverindicator(2)"  onmouseout="nonhover(2)">
          <img src="images/seo.png" alt="Shreyansh"class="home-images">
           <div class="container">
             <h2  class="heading">SEO</h2>
@@ -290,7 +354,7 @@ function fixStepIndicator(n) {
         </div>
 
         <div class="col-sm-4 tile" data-aos="zoom-in">
-          <div class="focused">
+          <div class="focused hovertest">
           <img src="images/ecommerce.png" alt="Shreyansh"class="home-images">
           <div class="container">
             <h2 class="heading">Ecommerce website</h2>
@@ -304,7 +368,7 @@ function fixStepIndicator(n) {
      <div class="container " style=" margin-bottom: 10%;" >
         
         <div class="col-sm-4 tile "data-aos="fade-up" >
-          <div class="focused">
+          <div class="focused hovertest">
           <img src="images/graphic designing.png" alt="Shreyansh"class="home-images">
           <div class="container">
             <h2 class="heading">Graphic design</h2>
@@ -314,7 +378,7 @@ function fixStepIndicator(n) {
         </div>
 
         <div class="col-sm-4 tile" data-aos="fade-up">
-          <div class="focused">
+          <div class="focused hovertest">
          <img src="images/ppc.png" alt="Shreyansh" class="home-images">
           <div class="container">
             <h2 class="heading">PPC</h2>
@@ -324,7 +388,7 @@ function fixStepIndicator(n) {
         </div>
 
         <div class="col-sm-4 tile hideme" data-aos="fade-up">
-          <div class="focused">
+          <div class="focused hovertest">
           <img class="home-images" src="images/digital marketing.png" alt="Shreyansh">
           <div class="container">
             <h2 class="heading">Social media management</h2>
@@ -351,7 +415,7 @@ function fixStepIndicator(n) {
          <div class="underline center-block"data-aos="zoom-in"></div>
         <div class="col-sm-4 tile " data-aos="zoom-in"  >
           <!-- <div style=" box-shadow: 0px 0px 5px 0px #000; margin-right: 10px; border-radius: 1%;"> -->
-          <div class="focused">
+          <div class="focused hovertest">
              <img src="images/stratergic planning.png" alt="Shreyansh"class="home-images">
               <div class="container ">
                 <h2  class="heading">Business Stratergy</h2>
@@ -362,7 +426,7 @@ function fixStepIndicator(n) {
         </div>
 
         <div class="col-sm-4 tile"data-aos="zoom-in" >
-          <div class="focused">
+          <div class="focused hovertest">
          <img src="images/technology.png" alt="Shreyansh"class="home-images">
           <div class="container">
             <h2 class="heading">Technology</h2>
@@ -373,7 +437,7 @@ function fixStepIndicator(n) {
 
 
         <div class="col-sm-4 tile" data-aos="zoom-in" >
-          <div class="focused">
+          <div class="focused hovertest">
             <img src="images\User Experience.png" alt="Shreyansh"class="home-images">
             <div class="container">
               <h2 class="heading">Designing User Experience</h2>
@@ -465,7 +529,7 @@ function fixStepIndicator(n) {
             <div class="col-sm-5"data-aos="zoom-in">
               <div id="sub" class="heading ">SEND YOUR QUERRIES</div>
               <div class="sub text-center" style="display:none; font-size: 20px;color:  #f43900; " id="thankyou" data-aos="fade-up">
-                <p style="margin-bottom: -10px;">Thank you for contacting us!</p><p> We will get back to you soon!</p>
+                <p style="margin-bottom: -10px;">Thank you for contacting us!</p><p> We will get in touch with you within 24 hours.</p>
               </div>
                 <form id="gform" action="https://script.google.com/macros/s/AKfycbxTg22yGmUFRXJ0f_3DXn_fNvXGlLxukDG3k-n7/exec" method="post" >
                   <div class="row">

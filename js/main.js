@@ -4,7 +4,7 @@
 
 //nav
     $(window).scroll(function(){
-        $('nav').toggleClass('scrolled', $(this).scrollTop() > 150);
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
       });
 
 //nav small screen
@@ -112,7 +112,7 @@
                       console.log(xhr.responseText);
                       document.getElementById('loading').style.display = 'none';
                       document.getElementById('thankyou').style.display = 'block';               
-                      document.getElementById('gform').style.display = 'block';
+                      document.getElementById('gform').style.display = 'none';
                       return;
                  };
                   // url encode form data for sending as post data
