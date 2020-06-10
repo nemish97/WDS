@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="images/logo.png">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -503,7 +502,6 @@
       </div>
       <!--/panel-group-->
 
-
       <div class="" style="padding: 10px 10px 10px;">
          <div class="row">
             <div class="col-sm-5"data-aos="zoom-in">
@@ -546,9 +544,10 @@
             </div>
           </div>
       </div> 
-      <script src="js/aos.js"></script>
-      <script src="js/main.js"></script>
+
     </div>
+    
+
     <!-- Site map --> 
     <div class="container  sitemap" >
      <div class="container " style="margin-bottom: 20px;">
@@ -558,13 +557,13 @@
     </div>
      <div> 
        <div class="col-sm-3 footer-block ">
-           <img class="" href="#myPage"><img src="images/logo.png" style="width:100%;height:50px ;top: 10px; bottom: 10px;">
+           <img  href="#myPage"><img src="images/logo.png" style="width:100%;height:50px ;top: 10px; bottom: 10px;">
            <span>WDS is a one stop solution to all your digital needs.</span>
         
        </div>
 
        <div class="col-sm-3 center-block footer-block" >
-           <a  style="font-size: 16px;text-decoration: none; "><b> WEBSITE</b></a></br>
+           <p><b> WEBSITE</b></p>
           <li> WEB DEVELOPMENT</li>
           <li> WEB DESIGN</li>
           <li> WEBSITE OPTIMIZATION</li>
@@ -579,7 +578,7 @@
      
 
       <div class="center-block col-sm-3 footer-block">
-           <a id="sitemap1" style="font-size: 16px;text-decoration: none; "><b> DIGITAL SOLUTIONS</b></li></a>
+          <p><b> DIGITAL SOLUTIONS</b><p>
           <li> GOOGLE LISTING</li>
           <li>DIGITAL MARKETING</li>
           <li>PAY PER CLICK</li>
@@ -589,22 +588,48 @@
        <div class="col-sm-3 center-block footer-block" id="newsletter">
          <div>
           <center ><b>SUBSCRIBE TO OUR NEWSLETTER  </b> </center>
-          <div id="message"><?php if(isset($success)){ echo $message; } ?></div>
+          
           <form action="newsletter.php" method="POST">
             <input class="form-control" type="email" name="Email" value="" placeholder="ENTER YOUR EMAIL ID" style="width: 100%; margin-bottom: 2%;" required >
             <button type="submit" class="button1 center-block" id="submit" name="submit" value="submit" >Submit</button>
           </form>
          </div>
-
+<!-- 
             <div  class=" center-block" style="font-size: 25px;" >
             <a href="" alt="facebook" target="_blank"><i class="fa fa-facebook-official" ></i></a>
           <a href="" alt="instagram" target="_blank"><i class="links fa fa-instagram" ></i>
           <a href="whatsapp://send?text=I'd like to get some information about the courses you offer.&phone=+919773355449" alt="whatsapp"><i class="links fa fa-whatsapp"></i></a>
         
-         </div>   
+         </div>    -->
        </div>
      </div>
+    
    </div>
+   <!-- <div  >
+    <a  href="tel:+919920741475" onclick="ga('send', 'event', 'CallLink' , 'CallLink','CallLink-TopMenu',0);" id="but" style="width:4rem ; height: 4rem; ">
+      <img class="center-block" src="images/call.png" alt="Chania" style="width:100%; height: 100%; ">
+    </a>
+  
+   </div> -->
+   <!-- <footer  style=" background: #f43900;">
+    <div class="col-sm-6 " style="height: 100%;">
+      <a  href="termsandconditions.html" style="text-decoration: none;">Terms & Conditions</a>
+    </div>
+    <div class="col-sm-6  " style="height: 100%;">
+      <a  href="termsandconditions.html" style="text-decoration: none;">Terms & Conditions</a>
+    </div>
+   </footer>
+   -->
+<div style="width: 100%; height: 2px;"></div>
+   <footer style="background-color: #06232b; padding-top: 15px; padding-bottom: 10px; padding-left: 15px; color: white;">
+    <div class="col-sm-5 " style="font-family: lato; font-size: 11PX; padding-bottom: 15px;">
+      © 2020, All Rights Reserved by WDS
+     </div>
+     <div class="col-sm-5 " style="font-family: lato; font-size: 11PX; padding-bottom: 15px; "><a href="termsandconditions.html">Terms & Conditions</a></div>
+     <div class="col-sm-2" style="font-family: lato; font-size: 11PX; padding-bottom: -25px;">
+       <a href="report.html">Report an issue?</a>
+     </div></br>
+ </footer>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -618,6 +643,10 @@
   })();
   </script>
   <!--End of Tawk.to Script-->
+
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+
   </body>
 </html>
  <!--  
