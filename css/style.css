@@ -2,6 +2,8 @@
 @font-face {
 font-family: "myfont";
 src: url("Fonts/nunito/Nunito-Regular.ttf")  format('truetype');
+font-style: normal;
+  font-weight: 400;
 }
 body {
   line-height: 1.7;
