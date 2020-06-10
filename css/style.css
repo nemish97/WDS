@@ -1,18 +1,15 @@
 
 @font-face {
-font-family: "Century Gothic";
-src: url("css/fonts/CenturyGothic.ttf");
-src:
-url("css/Fonts/CenturyGothic.ttf") format("tff"),
-url("Century-Gothic.svg#filename") format("svg");
+font-family: "myfont";
+src: url("css/Fonts/nunito/Nunito-Regular.ttf");
 }
 body {
   line-height: 1.7;
   letter-spacing: 1.2px; 
   color: grey;
-  font-weight: 400;
+
   font-size: 16px; 
-  font-family: Montserrat ;
+  font-family:  "myfont" ;
 
   background: white;
   
@@ -27,23 +24,19 @@ a {
 
 .container
 {
-	width: 94%;
-	margin-left: 3%;
+  width: 90%;
+  margin: auto;
 	margin-top: 2%;
 	margin-bottom: 2%;
 	text-align: justify;
 }
 
 
-.footer
-{
-   background: -webkit-linear-gradient(left,  #0d4d61 ,#06232b );
-   color: white;
-}
+
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  font-family: "myfont"; }
 
 
 .navbar-default{
@@ -110,7 +103,7 @@ h1, h2, h3, h4, h5,
 {
 padding-top: 3px; padding-bottom: 4px; padding-right: 10px; padding-left: 10px;
      background: -webkit-linear-gradient(left,  #f43900 ,#f47e00 );
-      border-radius: 2px;
+      border-radius: 50px;
        border: 1px solid #f47e00;
       text-align: center;
       font-size: 2.5vmin;
@@ -120,7 +113,7 @@ padding-top: 3px; padding-bottom: 4px; padding-right: 10px; padding-left: 10px;
       color: #fff;
       
 }
- .button:hover, .button:focus .button:active {
+ .button:hover {
 
      
      transform: scale(1.1);
@@ -135,7 +128,7 @@ padding-top: 3px; padding-bottom: 4px; padding-right: 10px; padding-left: 10px;
       -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
    box-shadow: 1px 1px 20px 1px #c6bebc;
-   border-radius: 5%;
+   border-radius: 20px;
     transition: transform .5s ease;
     display: block;
 }
@@ -238,12 +231,11 @@ padding-top: 3px; padding-bottom: 4px; padding-right: 10px; padding-left: 10px;
   box-sizing: border-box;
 }
 
-#regForm {
-  background-color: #ffffff;
+#modalform {
+ 
   margin: 0px auto;
-  padding: 40px;
-  width: 70%;
-  min-width: 300px;
+  padding: 20px;
+ 
 }
 
 h1 {
@@ -271,7 +263,7 @@ input.invalid {
       text-align: center;
       font-size: 2.5vmin;
       letter-spacing: 1px;
-      opacity: 70%;
+      opacity: 50%;
       background: #fff;
       color: #000;
   
@@ -310,67 +302,19 @@ input.invalid {
 }
 
 
-$color-green: #34C37A; 
-.checkbox {
-    width: 100%;
-    margin: 15px auto;
-    position: relative;
-    display: block;
-    label {
-        position: relative;
-        min-height: 34px;
-        display: block;
-       
-        margin-bottom: 0;
-        font-weight: normal;
-        cursor: pointer;
-        span {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        &:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            margin: 4px;
-            width: 22px;
-            height: 22px;
-            transition: transform 0.28s ease;
-            border-radius: 3px;
-            border: 2px solid $color-green;
-        }
-        &:after {
-            content: '';
-            display: block;
-            width: 10px;
-            height: 5px;
-            border-bottom: 2px solid $color-green;
-            border-left: 2px solid $color-green;
-            transform: rotate(-45deg) scale(0);
-            transition: transform ease 0.25s;
-            position: absolute;
-            top: 12px;
-            left: 10px;
-        }
-    }
-    input[type="checkbox"] {
-        width: auto;
-        opacity: 0.00000001;
-        position: absolute;
-        left: 0;
-        margin-left: -20px;
-        &:checked ~ label{
-            &:before {
-                border: 2px solid $color-green;
-            }
-            &:after {
-                transform: rotate(-45deg) scale(1);
-            }
-        }
-        &:focus + label::before {
-            outline: 0;
-        }
-    }
+.sitemap{
+  width: 100%;
+  margin-bottom: 0% !important;
+  background: -webkit-linear-gradient(left,  #0d4d61 ,#06232b );
+  color: white; 
+}
+
+.button:focus, .button1:focus
+{
+  outline: none;
+  
+}
+
+.footer-block{
+  margin-bottom: 5%;
 }

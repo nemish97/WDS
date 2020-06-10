@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="shortcut icon" href="images\logo.png">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
-  <body >
+  <body  >
 
 
     <div id="myModal" class="modal fade">
@@ -71,7 +71,7 @@
             <span class="icon-bar" style="background-color: white;"></span>                      
             <span class="icon-bar" style="background-color: white;"></span>                      
           </button>
-          <a class="navbar-brand" href="#myPage"><img src="images/logo.png" style="width:5%;height:75% ; position: absolute; top: 10px; bottom: 10px;"></a>
+          <a class="navbar-brand" href="#myPage"><img src="images/newlogo.jpg" style="width:135px;height:30px ; position: absolute; top: 10px; bottom: 10px;"></a>
         </div>
         <nav class=" collapse navbar-collapse back" id="myNavbar">
           <ul class="nav navbar-nav navbar-right " >
@@ -549,78 +549,56 @@
       <script src="js/aos.js"></script>
       <script src="js/main.js"></script>
     </div>
-    <!-- Site map --> 
-    <div class="container  sitemap" >
-     <div class="container " style="margin-bottom: 20px;">
-      <center >
-       <button class="button" data-toggle="modal" data-target="#myModal1"data-dismiss="modal" style= "padding-top: 10px; padding-bottom: 10px; border-radius: 50px;"><i class="glyphicon glyphicon-user"></i>Consult Our Experts</button>  
-      </center>
-    </div>
-     <div> 
-       <div class="col-sm-3 footer-block ">
-           <img class="" href="#myPage"><img src="images/logo.png" style="width:100%;height:50px ;top: 10px; bottom: 10px;">
-           <span>WDS is a one stop solution to all your digital needs.</span>
-        
-       </div>
-
-       <div class="col-sm-3 center-block footer-block" >
-           <a  style="font-size: 16px;text-decoration: none; "><b> WEBSITE</b></a></br>
-          <li> WEB DEVELOPMENT</li>
-          <li> WEB DESIGN</li>
-          <li> WEBSITE OPTIMIZATION</li>
-          <li> WEBSITE MAINTAINANCE</li>
-          <li> SEO</li>
-          <li> E-COMMWERCE</li>
-          <li> WEBSITE HOSTING</li>
-          <li> BLOG</li>
-           
-        
-       </div>
-     
-
-      <div class="center-block col-sm-3 footer-block">
-           <a id="sitemap1" style="font-size: 16px;text-decoration: none; "><b> DIGITAL SOLUTIONS</b></li></a>
-          <li> GOOGLE LISTING</li>
-          <li>DIGITAL MARKETING</li>
-          <li>PAY PER CLICK</li>
-          <li>GRAPHIC DESIGNING</li>         
-       </div>
-
-       <div class="col-sm-3 center-block footer-block" id="newsletter">
-         <div>
-          <center ><b>SUBSCRIBE TO OUR NEWSLETTER  </b> </center>
-          <div id="message"><?php if(isset($success)){ echo $message; } ?></div>
-          <form action="newsletter.php" method="POST">
-            <input class="form-control" type="email" name="Email" value="" placeholder="ENTER YOUR EMAIL ID" style="width: 100%; margin-bottom: 2%;" required >
-            <button type="submit" class="button1 center-block" id="submit" name="submit" value="submit" >Submit</button>
-          </form>
-         </div>
-
-            <div  class=" center-block" style="font-size: 25px;" >
-            <a href="" alt="facebook" target="_blank"><i class="fa fa-facebook-official" ></i></a>
-          <a href="" alt="instagram" target="_blank"><i class="links fa fa-instagram" ></i>
-          <a href="whatsapp://send?text=I'd like to get some information about the courses you offer.&phone=+919773355449" alt="whatsapp"><i class="links fa fa-whatsapp"></i></a>
-        
-         </div>   
-       </div>
-     </div>
-   </div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5edff8789e5f694422903f04/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
   </body>
 </html>
  <!--  
-     -->
+    <div class="footer" >
+        <div class="col-sm-3 " style="font-family: lato;  font-size: 13px; padding-bottom: 20px;">
+             <a id="sitemap1" style="font-size: 16px;text-decoration: none; "><b> D'EXCELLENCE ACADEMY</b></a></br> 
+            <a id="sitemap"  href="#about" style="text-decoration: none;">ABOUT US</a></br>
+            <a id="sitemap"  href="#about" style="text-decoration: none;">TEAM</a>
+         
+        </div>
+
+        <div class="col-sm-3" style="font-family: lato;  font-size: 13px;padding-bottom: 20px;">
+            <a id="sitemap1" style="font-size: 16px;text-decoration: none; "><b> COURSES</b></a></br>
+            <a id="sitemap"  href="nata.html" style="text-decoration: none;">ARCHITECTURE</a></br>
+            <a id="sitemap"  href="nid.html" style="text-decoration: none;">DESIGN</a></br>
+            <a id="sitemap"  href="nift.html" style="text-decoration: none;">FASHION</a></br>
+            <a id="sitemap"  href="bfa.html" style="text-decoration: none;">FINE ARTS</a></br>
+            
+         
+        </div>
+      
+
+       <div class="col-sm-3" style="font-family: lato;  font-size: 13px;padding-bottom: 20px;">
+            <a id="sitemap1" style="font-size: 16px;text-decoration: none; "><b> GALLERY</b></a></br>
+            <a id="sitemap"  href="performance.html" style="text-decoration: none;">PERFORMNCE</a></br>
+            <a id="sitemap"  href="classroom.html" style="text-decoration: none;">CLASSROOM CULTURE</a></br>
+            <a id="sitemap"  href="outofthebox.html" style="text-decoration: none;">OUT OF THE BOX</a></br>
+            <a id="sitemap"  href="achievement.html" style="text-decoration: none;">ACHIEVEMENTS</a></br>         
+        </div>
+
+        <div class="col-sm-3" style="font-family: lato;  font-size: 13px;padding-bottom: 20px;">
+          <a id="sitemap1" style="font-size: 16px;text-decoration: none; "><b> CONTACT US</b></a></br>
+                  GHATKOPAR (Head Office) : </br>A-24 / 25, A-wing, Satyam Shopping Centre, M.G. Road, Ghatkopar (E), Mumbai - 400 077. </br>Phone no: +919920741475</br> Email:<a href=" mailto:dexcellenceacademy@outlook.com?subject=Inquiry&body=I'd Like to get some information about NATA, NID, NIFT and BFA coaching at D'Excellence Academy." style="text-decoration: none;">dexcellenceacademy@outlook.com</a><br> 
+          <div  class=""  >
+         <a href="https://www.facebook.com/dexacademy.mumbai/" alt="facebook" target="_blank"><i class="fa fa-facebook-official" ></i></a>
+        <a href="https://instagram.com/dexcellence_academy?igshid=e2ptjao8juk7" alt="instagram" target="_blank"><i class="links fa fa-instagram" ></i>
+        <a href="whatsapp://send?text=I'd like to get some information about the courses you offer.&phone=+919819171481" alt="whatsapp"><i class="links fa fa-whatsapp"></i></a>
+      
+          </div>        
+        </div>
+      </div>
+    </div>
+
+
+    <footer style="background-color: #6ec4d1; color: black; height: 10%;">
+       <div class="col-sm-6" style="font-family: lato; font-size: 11PX;  text-align: justify">
+         © 2020, All Rights Reserved Web and Digital Solutions
+        </div>
+        <div class="col-sm-6" style="font-family: lato; font-size: 11PX; padding-bottom: 15px; text-align: justify ">Terms & Conditions</div>
+
+    </footer> -->
 
 
