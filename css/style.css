@@ -1,7 +1,7 @@
 
 @font-face {
 font-family: "myfont";
-src: url("css/Fonts/nunito/Nunito-Regular.ttf");
+src: url("Fonts/nunito/Nunito-Regular.ttf")  format('truetype');
 }
 body {
   line-height: 1.7;
