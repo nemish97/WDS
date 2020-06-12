@@ -27,27 +27,27 @@
 
     <div id="myModal" class="modal fade">
       <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
+          <div class="modal-content" >
+              <!-- <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   <h4 class="modal-title">Subscribe our Newsletter</h4>
-              </div>
-              <div class="container">
-                  <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                  
-                  <div class="col-sm-6">
-                      <form>
-                              <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Name">
-                              </div>
-                              <div class="form-group">
-                                  <input type="email" class="form-control" placeholder="Email Address">
-                              </div>
-                              <button type="submit" class="button">Subscribe</button>
-                          </form>
-                  </div>
-                  
-              </div>
+              </div> -->
+              <div >
+                <div class="col-sm-12" style=" background-color: #6ec4d1;">
+                  ehfsjbskjbkbsekj
+                  <div class="container ">
+            <center >
+             <button class="button" data-toggle="modal" data-target="#myModal1"data-dismiss="modal">Let's Get Started</button>  
+            </center>
+          </div>
+                </div>
+                <div class="" style=" background-color: #f43900;">
+                <div class="" style="color: white;">
+                  <p>ugsbxkzncoise
+                </div>
+                </div>
+
+              </div>                
           </div>
       </div>
     </div>
@@ -111,19 +111,6 @@
       showCursor: true
       });
     </script>
-
-    <div class="modal " id="result" >
-      <div class="modal-dialog ">
-        <div class="modal-content" style="background: url(images/background.jpg); color: white;">
-          <!-- <div class="modal-header" style="background: -webkit-linear-gradient(left,  #0d4d61 ,#06232b );">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title" >Lets Get Started</h4>
-          </div> -->
-          <div class="modal-body  "> thank you
-          </div>
-        </div>
-      </div>
-    </div>
 
 
     <div class="modal fade" id="myModal1" role="dialog">
@@ -300,7 +287,9 @@
 
 
     <div class="heading title" data-aos="zoom-in" style="margin-top: 5%">
-      Who Are We?
+      <h3>
+        Who Are We?
+      </h3> 
     </div>
     <div class="underline center-block" data-aos="zoom-in"></div>
 
@@ -550,61 +539,71 @@
 
     <!-- Site map --> 
     <div class="container  sitemap" >
-     <div class="container " style="margin-bottom: 20px;">
-      <center >
-       <button class="button" data-toggle="modal" data-target="#myModal1"data-dismiss="modal" style= "padding-top: 10px; padding-bottom: 10px; border-radius: 50px;"><i class="glyphicon glyphicon-user"></i>Consult Our Experts</button>  
-      </center>
+      <!-- consult button -->
+      <div class="container " style="margin-bottom: 20px;">
+        <center >
+        <button class="button" data-toggle="modal" data-target="#myModal1"data-dismiss="modal" style= "padding-top: 10px; padding-bottom: 10px; border-radius: 50px;"><i class="glyphicon glyphicon-user"></i>Consult Our Experts</button>  
+        </center>
+      </div>
+
+      <!-- site map -->
+      <div> 
+          <!-- logo and text -->
+          <div class="col-sm-3 footer-block ">
+            <img  href="#myPage"><img src="images/logo.png" style="width:100%;height:50px ;top: 10px; bottom: 10px;">
+            <span>WDS is a one stop solution to all your digital needs.</span>
+          </div>
+
+          <!-- website solutions -->
+        <div class="col-sm-3 center-block footer-block" >
+            <p><b> WEBSITE</b></p>
+            <li> WEB DEVELOPMENT</li>
+            <li> WEB DESIGN</li>
+            <li> WEB OPTIMIZATION</li>
+            <li> WEB MAINTAINANCE</li>
+            <li> SEO</li>
+            <li> E-COMMWERCE</li>
+            <li> WEBSITE HOSTING</li>
+            <li> BLOG</li>
+          </div>
+      
+          <!-- digital solutions -->
+          <div class="center-block col-sm-3 footer-block" style="margin-bottom: 15%;">
+            <p><b> DIGITAL SOLUTIONS</b><p>
+            <li> GOOGLE LISTING</li>
+            <li>DIGITAL MARKETING</li>
+            <li>PAY PER CLICK</li>
+            <li>GRAPHIC DESIGNING</li>         
+          </div>
+
+          <!-- location and newsletter -->
+          <div class="col-sm-3 center-block footer-block" id="newsletter">
+            <!-- location -->
+            <div class="logos text-left">
+              <p><b> REACH OUT TO US AT</b></p>
+              <div>
+                <a  alt="call" href="tel:+919321037059" onclick="ga('send', 'event', 'CallLink' , 'CallLink','CallLink-TopMenu',0);"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91-9321037059</a>
+              </div>
+              <div>
+                <a href="mailto:info@wds.com?subject=Enquiry&body=Hi WDS,I'd like to know more about your services and products." alt="mail" ><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;info@wds.com</a>
+              </div>
+              <div>
+                <p alt="address"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Mumbai, Pune</p>
+              </div>
+            </div><br>
+            
+            <!-- newsletter -->
+            <div>
+              <center ><b>SUBSCRIBE TO OUR NEWSLETTER  </b> </center>
+              <form action="newsletter.php" method="POST" style="font-size: 1.9vmin;">
+                <input class="form-control" type="email" name="Email" value="" placeholder="ENTER YOUR EMAIL ID" style="width: 100%; margin-bottom: 2%; size: 1.9vmin;" required >
+                <button type="submit" class="button1 center-block" id="submit" name="submit" value="submit" >Submit</button>
+              </form>
+            </div>
+            
+          </div>
+      </div>
     </div>
-     <div> 
-       <div class="col-sm-3 footer-block ">
-           <img  href="#myPage"><img src="images/logo.png" style="width:100%;height:50px ;top: 10px; bottom: 10px;">
-           <span>WDS is a one stop solution to all your digital needs.</span>
-        
-       </div>
-
-       <div class="col-sm-3 center-block footer-block" >
-           <p><b> WEBSITE</b></p>
-          <li> WEB DEVELOPMENT</li>
-          <li> WEB DESIGN</li>
-          <li> WEBSITE OPTIMIZATION</li>
-          <li> WEBSITE MAINTAINANCE</li>
-          <li> SEO</li>
-          <li> E-COMMWERCE</li>
-          <li> WEBSITE HOSTING</li>
-          <li> BLOG</li>
-           
-        
-       </div>
-     
-
-      <div class="center-block col-sm-3 footer-block">
-          <p><b> DIGITAL SOLUTIONS</b><p>
-          <li> GOOGLE LISTING</li>
-          <li>DIGITAL MARKETING</li>
-          <li>PAY PER CLICK</li>
-          <li>GRAPHIC DESIGNING</li>         
-       </div>
-
-       <div class="col-sm-3 center-block footer-block" id="newsletter">
-         <div>
-          <center ><b>SUBSCRIBE TO OUR NEWSLETTER  </b> </center>
-          
-          <form action="newsletter.php" method="POST">
-            <input class="form-control" type="email" name="Email" value="" placeholder="ENTER YOUR EMAIL ID" style="width: 100%; margin-bottom: 2%;" required >
-            <button type="submit" class="button1 center-block" id="submit" name="submit" value="submit" >Submit</button>
-          </form>
-         </div>
-<!-- 
-            <div  class=" center-block" style="font-size: 25px;" >
-            <a href="" alt="facebook" target="_blank"><i class="fa fa-facebook-official" ></i></a>
-          <a href="" alt="instagram" target="_blank"><i class="links fa fa-instagram" ></i>
-          <a href="whatsapp://send?text=I'd like to get some information about the courses you offer.&phone=+919773355449" alt="whatsapp"><i class="links fa fa-whatsapp"></i></a>
-        
-         </div>    -->
-       </div>
-     </div>
-    
-   </div>
    <!-- <div  >
     <a  href="tel:+919920741475" onclick="ga('send', 'event', 'CallLink' , 'CallLink','CallLink-TopMenu',0);" id="but" style="width:4rem ; height: 4rem; ">
       <img class="center-block" src="images/call.png" alt="Chania" style="width:100%; height: 100%; ">
@@ -621,13 +620,16 @@
    </footer>
    -->
 <div style="width: 100%; height: 2px;"></div>
-   <footer style="background-color: #06232b; padding-top: 15px; padding-bottom: 10px; padding-left: 15px; color: white;">
-    <div class="col-sm-5 " style="font-family: lato; font-size: 11PX; padding-bottom: 15px;">
+   <footer style="background-color: #06232b; color: white; padding-top: 15px;" >
+    <div class="col-sm-4 text-center  " style="font-family: lato; font-size: 11PX;">
       © 2020, All Rights Reserved by WDS
      </div>
-     <div class="col-sm-5 " style="font-family: lato; font-size: 11PX; padding-bottom: 15px; "><a href="termsandconditions.html">Terms & Conditions</a></div>
-     <div class="col-sm-2" style="font-family: lato; font-size: 11PX; padding-bottom: -25px;">
-       <a href="report.html">Report an issue?</a>
+     <div class="col-sm-4 text-center " style="font-family: lato; font-size: 11PX; ">
+      <a class="" href="termsandconditions.html" onMouseOver="this.style.color='#fff'">Terms & Conditions
+      </a>
+    </div>
+     <div class="col-sm-4 text-center" style="font-family: lato; font-size: 11PX; ">
+       <a href="report.html"onMouseOver="this.style.color='#fff'">Report an issue?</a>
      </div></br>
  </footer>
 <!--Start of Tawk.to Script-->

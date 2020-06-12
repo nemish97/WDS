@@ -120,7 +120,6 @@
                   return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
                 }).join('&')
                  xhr.send(encoded);
-    
                 }
                function loaded() {
                   console.log('contact form submission handler loaded successfully');
@@ -130,12 +129,5 @@
                 };
                document.addEventListener('DOMContentLoaded', loaded, false);
 
-
-
- function getstarted() {
-  document.getElementById('regForm').style.display = 'block';
-}
-
-function close() {
-  document.getElementById('regForm').style.display = 'none';
-}
+ 
+               
