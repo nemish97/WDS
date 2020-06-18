@@ -145,13 +145,7 @@ h1, h2, h3, h4, h5,
     display: block;
 }
 
-  /*.tile:hover
-  {
-  	transform: scale(1.1);
-      -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease;
-  } */
+
 
   .panel-heading
   {
@@ -181,20 +175,13 @@ h1, h2, h3, h4, h5,
   {
     text-align: center;
     margin: auto;
-    font-size: 20px;
-    font-weight: bold;
     color: #0d4d61;
-    display: block;padding-bottom: 2%;
-
-  }
-.title
-{
-  margin-top: 2%;
+    display: block;
+    padding-bottom: 2%;
+    margin-top: 2%;
   margin-bottom: 2%;
+  }
 
-  font-size: 24px;
-
-}
   .home-images
   {
     width: 50%; height: 50%; margin: auto; display: block;
@@ -324,6 +311,8 @@ input.invalid {
 
 .footer-block{
   margin-bottom: 5%;
+  font-size: 16px;
+
 }
 
 
@@ -342,4 +331,70 @@ input.invalid {
 .logos a:focus{
   color: #fff;
   text-decoration: none;
+}
+.newsletter-font{
+ margin-bottom: 0%;
+}
+
+@media only screen and (device-width: 768px){
+  .footer-block{
+   
+    font-size: 11px;
+  }
+  .newsletter-font{
+    font-size: 12px;
+  }
+ }
+ 
+ p{
+   font-size: 16px;
+   text-align: left;
+ }
+
+ @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+ .sticky
+ {
+   position: sticky;
+   position: -webkit-sticky;
+   top: 30px;
+   font: 90px 'Abril Fatface', sans-serif;
+   color: #fff;
+   text-align: center;
+ }
+
+ .block-2
+ {
+   background: url('../images/image1.jpg') no-repeat fixed;
+   background-size: cover;
+   height: 40vmax;
+   background-position: center;
+ }
+
+ 
+ .services-toggle
+ {
+   font-size: 14px;;
+ }
+
+ 
+.nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover
+{
+  color:#fff;
+  background-color:#06232b;
+  opacity: 100%;
+
+}
+
+.nav-pills>li>a:hover
+{
+  color:#fff;
+  background-color:#06232b;
+  opacity: 50%;
+
+}
+
+.nav-pills>li>a
+{
+  color:#06232b;
 }
