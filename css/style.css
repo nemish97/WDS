@@ -182,12 +182,23 @@ h1, h2, h3, h4, h5,
   margin-bottom: 2%;
   }
 
-  .home-images
+  .services-images
   {
-    width: 50%; height: 50%; margin: auto; display: block;
+    width: 45%; height: 45%; margin: auto; display: block;
   }
 
-@media (min-width: 100px){
+  .about-images
+  {
+    width: 25%; height: 25%;
+  }
+
+  .about-text
+  {
+    margin-top: -5%; margin-left: 30%;
+  }
+
+
+  @media (min-width: 100px){
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
@@ -333,6 +344,7 @@ input.invalid {
   text-decoration: none;
 }
 .newsletter-font{
+  color: white;
  margin-bottom: 0%;
 }
 
@@ -347,21 +359,12 @@ input.invalid {
  }
  
  p{
-   font-size: 16px;
-   text-align: left;
+   font-size: 15px;
+   text-align: justify;
+   text-overflow: ellipsis;
  }
 
- @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
- .sticky
- {
-   position: sticky;
-   position: -webkit-sticky;
-   top: 30px;
-   font: 90px 'Abril Fatface', sans-serif;
-   color: #fff;
-   text-align: center;
- }
 
  .block-2
  {
@@ -398,3 +401,76 @@ input.invalid {
 {
   color:#06232b;
 }
+
+/* Workflow */
+/* .workflow-container{
+  margin-top: 0%;
+  margin-bottom: 0%;
+ 
+ 
+}
+.workflow-border-left{
+
+  border-radius: 75px 0px 0px 75px;
+  border: 1px solid #f47e00;
+  border-right: #fff;
+  height: 910px;
+  margin-left: 15%;
+  margin-right: 20%;
+  border-bottom: #fff;
+}
+.workflow-border-right{
+  
+  border-radius: 0px 75px 75px 0px;
+  border: 1px solid #f47e00;
+  border-left: #fff;
+  height: 120px;
+  margin-left: 20%;
+  margin-right: 15%;
+  border-bottom: #fff;
+  
+} */
+
+
+.worflow-bg
+{
+  background: url('../images/about-bg.jpg') no-repeat fixed;
+  background-size: cover;
+  height: 1100px;
+  background-position: center;
+}
+
+.worflow-left
+{
+  margin-left: 5%;
+}
+
+.worflow-right
+{
+  margin-right: 5%;
+}
+
+/* 
+.workflow-line{
+  margin-left: 50%;
+  height: 5%;
+  width: 2px;
+  background-color: white;
+}
+
+.workflow-circle{
+  
+  height: 75px;
+  width: 75px;
+  border-radius:  75px 75px ;
+  background-color: white;
+  display: inline-block;
+  opacity: 100%;
+}
+
+.workflow-content
+{
+  display: inline-block;
+  background-color: white;
+  width: 250px;
+} */
