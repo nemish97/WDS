@@ -402,41 +402,17 @@ input.invalid {
   color:#06232b;
 }
 
-/* Workflow */
-/* .workflow-container{
-  margin-top: 0%;
-  margin-bottom: 0%;
- 
- 
-}
-.workflow-border-left{
-
-  border-radius: 75px 0px 0px 75px;
-  border: 1px solid #f47e00;
-  border-right: #fff;
-  height: 910px;
-  margin-left: 15%;
-  margin-right: 20%;
-  border-bottom: #fff;
-}
-.workflow-border-right{
-  
-  border-radius: 0px 75px 75px 0px;
-  border: 1px solid #f47e00;
-  border-left: #fff;
-  height: 120px;
-  margin-left: 20%;
-  margin-right: 15%;
-  border-bottom: #fff;
-  
-} */
+/* =============
+    Workflow 
+    ============
+*/
 
 
 .worflow-bg
 {
   background: url('../images/about-bg.jpg') no-repeat fixed;
   background-size: cover;
-  height: 1100px;
+  height: 1050px;
   background-position: center;
 }
 
@@ -450,27 +426,54 @@ input.invalid {
   margin-right: 5%;
 }
 
-/* 
-.workflow-line{
-  margin-left: 50%;
-  height: 5%;
-  width: 2px;
-  background-color: white;
+
+/* =============
+    Testimony 
+    ============
+*/
+.testimony{
+  background: url('../images/testimony.jpg') no-repeat fixed;
+  background-size: cover;
+  height: 75%;
+  background-position: center;
+  padding-top: 10%; 
+  padding-bottom: 15%;
 }
 
-.workflow-circle{
-  
-  height: 75px;
-  width: 75px;
-  border-radius:  75px 75px ;
-  background-color: white;
-  display: inline-block;
-  opacity: 100%;
+.testimony-container{
+  width: 65%;
+  margin: auto;  
 }
 
-.workflow-content
-{
-  display: inline-block;
-  background-color: white;
-  width: 250px;
-} */
+.carousel-indicators li{
+  border: 1px #06232b solid;
+}
+.carousel-indicators li.active{
+background-color:  #06232b ;
+}
+
+.carousel-indicators{
+  bottom: -30px;
+  }
+
+
+.testimony-heading{
+  color: white !important;
+}
+
+.carousel-inner p{
+  color: #000;
+}
+
+.quote-right{
+  display: inline-block; 
+  margin-right: 10px;
+}
+
+.quote-left{
+  display: inline-block; 
+  margin-left: 10px;
+}
+.quote-size{
+  max-width: 65%;
+} 
